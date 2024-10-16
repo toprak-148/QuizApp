@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" 
+    integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+          integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer"
+          />
+    
+</head>
+<body>
+
+    <div class="app-container">
+        <div id="button-box">
+            <button class="btn btn-lg btn-warning btn-start active">Start Quiz</button>
+        </div>
+        <div id="quiz-box" class="card">
+            <div id="header" class="card-header">
+                <h4 class="app-title mb-0">Quiz App</h4>
+                <div class="time">
+                    <div class="time-text">Kalan Süre</div>
+                    <div class="time-second">10</div>
+                </div>
+                <div class="time-line"></div>
+            </div>
+            <div id="body">
+                 
+            </div>
+            <div id="footer" class="card-footer summary">
+                <div class="question-index badge text-bg-danger">
+                    <span>0/4</span>
+                </div>
+                <button class="btn btn-next btn-secondary btn-sm">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div> 
+
+        <div id="score-box" class="card card-body">
+            <i class="bi bi-trophy"></i>
+            <div class="score-text">Toplam 10 soruda 3 doğru cevap verdiniz</div>
+            <div>
+                <button class="btn btn-primary btn-replay">Replay</button>
+                <button class="btn btn-primary btn-quit">Quit</button>
+            </div>
+        </div>
+    </div>
+         
+    
+
+
+
+
+
+
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/soru.js"></script>
+    <script type="module" src="js/quiz.js"></script>
+    <script type="module" src="js/UserInterface.js"></script>
+</body>
+</html>
